@@ -1,0 +1,131 @@
+git config user.name --global "eric.weiss"
+git config user.email --global "eric.weiss@winchendon.com"
+
+git init
+git add --all
+git commit -a -m "comment" # commit without staging (add)
+git remote add origin https://github.com/Patowmack/Divers.git
+git branch -M main
+git push -u origin main
+git push --set-upstream origin main
+git remote add origin https://github.com/Patowmack/Divers.git
+git push origin
+
+git config --global user.name "Patowmack"
+git config --global user.email "diving@patowmackdivers.com"
+git remote -v
+git init
+git add .
+git commit -m "message"
+
+gh login auth
+gh repo create PDC --public 
+OR
+gh repo create --source=. --public
+git remote remove origin
+git remote add origin <url>
+OR
+
+git remote add origin https://github.com/Patowmack/public_html.git
+git branch -M main
+git push -u origin main
+
+mvim .gitignore
+touch .nojekyll
+
+Note: GoDaddy has the mvpq.org and winchendon.com domains
+
+https://patowmack.github.io/public/
+
+
+
+# NEW Notes to create web site on GitHub
+/Library/WebServer/Documents/PatowmackDivers/public_html
+git init
+git add --all
+git commit -a -m "comment" # commit without staging (add)
+
+TO DELETE GITHUB REPOSITORY GO TO GITHUB CLICK ON SETTINGS AT BOTTOM YOU CAN DELETE THE REPOSITORY
+NOW GO TO GitHub CREATE NEW REPOSITORY. IN THIS CASE PatowmackDivers
+
+BACK AT LOCAL TERMINAL FOLLOW INSTRUCTIONS ON GitHUB:
+git remote add origin https://github.com/Patowmack/PatowmackDivers.git
+git branch -M main
+git push -u origin main
+
+#EITHER
+#git remote add origin https://github.com/Patowmack/PatowmackDivers.git
+#OR
+
+
+#git remote set-url origin https://github.com/Patowmack/PatowmackDivers
+
+#git remote -v
+#git push -u origin main
+
+THIS COULD TAKE A WHILE
+
+
+Settings | Pages | Static HTML | Commit Changes
+
+== NEXT STEP IS TO HYPERLINK OTHER PAGES
+== MY CURRENT ISSUE IS A LEADING /
+
+
+SUMMARY
+update html
+git add .
+git commit -m "comments"
+git push
+
+on GitHub
+Settings | Pages | Unpublish site 
+GitHub Actions | Static HTML | Configure
+
+
+NEXT:
+
+Yes, you can create a web page with 2 columns of different sizes using Bootstrap's grid system. Bootstrap's grid is based on a 12-column layout, allowing you to create columns of varying widths. Here's how you can achieve this:
+
+1. Use the container class to wrap your content:
+
+```html
+<div class="container">
+  <div class="row">
+    <!-- Columns go here -->
+  </div>
+</div>
+```
+
+2. Create two columns with different sizes using the col-* classes:
+
+```html
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <!-- Larger column content -->
+    </div>
+    <div class="col-md-4">
+      <!-- Smaller column content -->
+    </div>
+  </div>
+</div>
+```
+
+In this example, the first column takes up 8 out of 12 grid units (col-md-8), while the second column takes up 4 out of 12 grid units (col-md-4)[1][2]. This creates a layout where one column is twice the size of the other.
+
+You can adjust these numbers to create different proportions, as long as they add up to 12. For example, you could use col-md-9 and col-md-3 for a 75%/25% split[5].
+
+The 'md' in the class names refers to the medium breakpoint, meaning this layout will apply to screens wider than the medium breakpoint. For smaller screens, the columns will stack vertically by default, ensuring responsiveness[2][6].
+
+Remember, Bootstrap's grid system is flexible and responsive, allowing you to create layouts that adapt to different screen sizes[7].
+
+Citations:
+[1] https://www.geeksforgeeks.org/how-to-create-a-basic-two-column-layout-using-bootstrap-5/
+[2] https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-grid-system.php
+[3] https://www.w3schools.com/howto/howto_css_two_columns.asp
+[4] https://react-bootstrap.netlify.app/docs/layout/grid/
+[5] https://www.w3schools.com/bootstrap/bootstrap_grid_examples.asp
+[6] https://mdbootstrap.com/docs/standard/layout/grid/
+[7] https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp
+

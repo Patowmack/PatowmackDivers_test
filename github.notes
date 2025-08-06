@@ -1,0 +1,96 @@
+git config user.name --global "eric.weiss"
+git config user.email --global "eric.weiss@winchendon.com"
+
+
+gh auth status
+
+
+git init
+git add --all
+git commit -a -m "comment" # commit without staging (add)
+git remote add origin https://github.com/Patowmack/Divers.git
+git branch -M main
+git push -u origin main # origin is remote, main is local
+git push --set-upstream origin main
+git remote add origin https://github.com/Patowmack/Divers.git
+git push origin
+
+git config --global user.name "Patowmack"
+git config --global user.email "diving@patowmackdivers.com"
+git remote -v
+git init
+git add .
+git commit -m "message"
+
+gh login auth
+gh repo create PDC --public 
+OR
+gh repo create --source=. --public
+git remote remove origin
+git remote add origin <url>
+OR
+
+git remote add origin https://github.com/Patowmack/public_html.git
+git branch -M main
+git push -u origin main
+
+mvim .gitignore
+touch .nojekyll
+
+Note: GoDaddy has the mvpq.org and winchendon.com domains
+
+https://patowmack.github.io/public/
+
+
+
+# NEW Notes to create web site on GitHub
+/Library/WebServer/Documents/PatowmackDivers/public_html
+git init
+git add --all
+git commit -a -m "comment" # commit without staging (add)
+
+TO DELETE GITHUB REPOSITORY GO TO GITHUB CLICK ON SETTINGS AT BOTTOM YOU CAN DELETE THE REPOSITORY
+NOW GO TO GitHub CREATE NEW REPOSITORY. IN THIS CASE PatowmackDivers
+
+BACK AT LOCAL TERMINAL FOLLOW INSTRUCTIONS ON GitHUB:
+git remote add origin https://github.com/Patowmack/PatowmackDivers.git
+git branch -M main
+git push -u origin main
+
+#EITHER
+#git remote add origin https://github.com/Patowmack/PatowmackDivers.git
+#OR
+
+
+#git remote set-url origin https://github.com/Patowmack/PatowmackDivers
+
+#git remote -v
+#git push -u origin main
+
+THIS COULD TAKE A WHILE
+
+
+Settings | Pages | Static HTML | Commit Changes
+
+== NEXT STEP IS TO HYPERLINK OTHER PAGES
+== MY CURRENT ISSUE IS A LEADING /
+
+
+SUMMARY
+update html
+git add .
+git commit -m "comments"
+git push
+
+on GitHub
+Settings | Pages | Unpublish site 
+GitHub Actions | Static HTML | Configure
+
+
+git remote add origin <your_repository_url>
+
+Push to remote: git push -u origin main
+
+    -u sets the upstream branch, so you can use git push without specifying the branch in the future.
+
+    
